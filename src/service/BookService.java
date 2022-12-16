@@ -8,9 +8,9 @@ public interface BookService {
 
     List <Book> createBooks(List<Book>books);
 
-    List<Book> getAllBooks();
+    List<Book> getAllBooks(List<Book> books);
 
-    List<Book> getBooksByGenre(String genre);
+    List<Book> getBooksByGenre(List<Book> books,String genre);
 
     Book removeBookById(Long id);
 
